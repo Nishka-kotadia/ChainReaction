@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ResQMesh App Mock</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+  body {
+    margin: 0; padding: 0; font-family: 'Inter', sans-serif;
+    background-color: #0F172A; color: white;
+    display: flex; justify-content: center; align-items: center; height: 100vh;
+  }
+  .device-frame {
+    width: 375px; height: 812px; background-color: #0F172A; border: 8px solid #334155;
+    border-radius: 40px; overflow: hidden; position: relative; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+  }
+  .header {
+    padding: 40px 20px 20px; display: flex; justify-content: space-between; align-items: center;
+  }
+  .header h1 { margin: 0; font-size: 20px; font-weight: 800; letter-spacing: 1px; }
+  .wifi-icon { color: #34d399; font-size: 24px; font-weight: bold; }
+  
+  .content { padding: 0 20px; height: calc(100% - 160px); overflow-y: auto; }
+  
+  /* Mesh Status Card */
+  .mesh-card {
+    background: linear-gradient(135deg, #1E293B, #0F172A);
+    border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;
+    padding: 16px; display: flex; align-items: center; margin-bottom: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  }
+  .mesh-icon {
+    width: 48px; height: 48px; background: rgba(52, 211, 153, 0.2);
+    border-radius: 50%; display: flex; justify-content: center; align-items: center;
+    color: #34d399; font-size: 24px; margin-right: 16px;
+  }
+  .mesh-info h3 { margin: 0; font-size: 14px; color: #94A3B8; font-weight: 400; }
+  .mesh-info h2 { margin: 4px 0 0; font-size: 20px; color: white; }
+
+  h2.section-title { font-size: 18px; margin: 0 0 16px; }
+
+  /* Alert Card */
+  .alert-card {
+    background: #1E293B; border-radius: 16px; padding: 16px; margin-bottom: 16px;
+    border: 1.5px solid;
+  }
+  .alert-critical { border-color: rgba(244, 63, 94, 0.3); box-shadow: 0 0 10px rgba(244, 63, 94, 0.1); }
+  .alert-high { border-color: rgba(249, 115, 22, 0.3); }
+  
+  .alert-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .badge { padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 700; }
+  .badge-critical { background: rgba(244, 63, 94, 0.2); color: #F43F5E; }
+  .badge-high { background: rgba(249, 115, 22, 0.2); color: #F97316; }
+  
+  .alert-node { font-size: 12px; color: #94A3B8; }
+  .alert-desc { font-size: 16px; font-weight: 500; margin: 0 0 12px; line-height: 1.4; }
+  
+  .alert-action {
+    background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .alert-action span { font-size: 13px; color: rgba(255,255,255,0.7); }
+
+  /* Bottom Nav */
+  .bottom-nav {
+    position: absolute; bottom: 0; width: 100%; height: 80px;
+    background: #1E293B; display: flex; justify-content: space-around; align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .nav-item { text-align: center; color: #94A3B8; font-size: 12px; }
+  .nav-item.active { color: #38BDF8; }
+  .nav-icon { font-size: 24px; margin-bottom: 4px; display: block; }
+</style>
+</head>
+<body>
+  <div class="device-frame">
+    <div class="header">
+      <h1>ResQMesh Tactical</h1>
+      <div class="wifi-icon">◎</div>
+    </div>
+    
+    <div class="content">
+      <div class="mesh-card">
+        <div class="mesh-icon">⚄</div>
+        <div class="mesh-info">
+          <h3>Mesh Status</h3>
+          <h2>4 Nodes Connected</h2>
+        </div>
+      </div>
+      
+      <h2 class="section-title">Active Emergencies</h2>
+      
+      <div class="alert-card alert-critical">
+        <div class="alert-header">
+          <div class="badge badge-critical">CRITICAL</div>
+          <div class="alert-node">Node: node_77</div>
+        </div>
+        <p class="alert-desc">Unconscious person, severe bleeding from leg.</p>
+        <div class="alert-action">
+          <span style="color:#F43F5E">⛨</span>
+          <span>Dispatch immediate medical rescue. Apply direct pressure.</span>
+        </div>
+      </div>
+
+      <div class="alert-card alert-high">
+        <div class="alert-header">
+          <div class="badge badge-high">HIGH</div>
+          <div class="alert-node">Node: node_42</div>
+        </div>
+        <p class="alert-desc">Group trapped under building debris.</p>
+        <div class="alert-action">
+          <span style="color:#F97316">⛨</span>
+          <span>Deploy search and rescue extraction team.</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bottom-nav">
+      <div class="nav-item active">
+        <span class="nav-icon">⊞</span>
+        Dashboard
+      </div>
+      <div class="nav-item">
+        <span class="nav-icon">✚</span>
+        AI Triage
+      </div>
+    </div>
+  </div>
+</body>
+</html>

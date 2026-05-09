@@ -1,0 +1,38 @@
+name: resqmesh_mobile
+description: Offline decentralized emergency coordination system.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.1
+  nearby_connections: ^4.3.0
+  geolocator: ^10.1.0
+  flutter_map: ^6.1.0
+  intl: ^0.19.0
+  permission_handler: ^11.3.1
+  connectivity_plus: ^6.0.3
+  socket_io_client: ^2.0.3+1
+  http: ^1.2.0
+  image_picker: ^1.1.2
+  google_mlkit_image_labeling: ^0.13.0
+  shared_preferences: ^2.5.5
+  onnxruntime: ^1.4.1
+  image: ^4.1.0
+  path_provider: ^2.1.5
+  flutter_local_notifications: ^18.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/disaster_mobilenetv3/

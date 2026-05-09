@@ -1,0 +1,13 @@
+{
+  "model_name": "disaster_mobilenetv3",
+  "architecture": "MobileNetV3-Small",
+  "best_val_accuracy": 98.54,
+  "input_size": [224, 224],
+  "id2label": {"0": "fire", "1": "normal", "2": "smoke"},
+  "label2id": {"fire": 0, "normal": 1, "smoke": 2},
+  "preprocessing": {
+    "mean": [0.485, 0.456, 0.406],
+    "std": [0.229, 0.224, 0.225],
+    "rescale_factor": 0.00392156862745098
+  }
+}

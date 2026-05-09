@@ -1,0 +1,84 @@
+# ──────────────────────────────────────────────
+# JVM crash / replay logs (generated in root)
+# ──────────────────────────────────────────────
+hs_err_pid*.log
+replay_pid*.log
+
+# ──────────────────────────────────────────────
+# OS generated files
+# ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ──────────────────────────────────────────────
+# IDEs & editors
+# ──────────────────────────────────────────────
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+.atom/
+
+# ──────────────────────────────────────────────
+# Flutter / Dart (resqmesh_mobile)
+# ──────────────────────────────────────────────
+**/doc/api/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/build/
+**/coverage/
+**/.metadata
+**/pubspec.lock        # keep if you want reproducible builds; remove this line otherwise
+**/app.*.symbols
+**/app.*.map.json
+
+# Android build artefacts
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/android/.gradle/
+**/android/local.properties
+**/android/key.properties
+
+# iOS build artefacts
+**/ios/Flutter/.last_build_id
+**/ios/Pods/
+**/ios/.symlinks/
+
+# ──────────────────────────────────────────────
+# Node.js (resqmesh_server)
+# ──────────────────────────────────────────────
+**/node_modules/
+**/.env
+**/.env.local
+**/.env.*.local
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# ──────────────────────────────────────────────
+# Python / AI module (resqmesh-ai)
+# ──────────────────────────────────────────────
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+**/env/
+**/venv/
+**/.venv/
+**/*.egg-info/
+**/dist/
+**/.pytest_cache/
+
+# ──────────────────────────────────────────────
+# Miscellaneous
+# ──────────────────────────────────────────────
+*.class
+*.log
